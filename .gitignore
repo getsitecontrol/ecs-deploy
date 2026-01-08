@@ -9,3 +9,15 @@ env/
 .tox/
 .coverage
 .cache
+
+# Migration sensitive data (may contain secrets)
+migration/backups/*.json
+migration/env-configs/*.env
+migration/env-configs/*.txt
+
+# Keep .gitkeep files
+!migration/backups/.gitkeep
+!migration/env-configs/.gitkeep
+
+# Copilot local state
+copilot/.copilot/

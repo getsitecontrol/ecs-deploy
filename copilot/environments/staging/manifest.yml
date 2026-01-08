@@ -1,0 +1,29 @@
+# Environment manifest for staging
+# https://aws.github.io/copilot-cli/docs/manifest/environment/
+
+name: staging
+type: Environment
+
+# Import existing VPC instead of creating new one
+# Uncomment and fill in your VPC details:
+# network:
+#   vpc:
+#     id: vpc-xxxxxxxxx
+#     public:
+#       ids:
+#         - subnet-xxxxxxxxx
+#         - subnet-xxxxxxxxx
+#     private:
+#       ids:
+#         - subnet-xxxxxxxxx
+#         - subnet-xxxxxxxxx
+
+# HTTP configuration for Load Balanced services
+# http:
+#   public:
+#     certificates:
+#       - arn:aws:acm:region:account:certificate/cert-id
+
+# Observability settings
+observability:
+  tracing: awsxray
