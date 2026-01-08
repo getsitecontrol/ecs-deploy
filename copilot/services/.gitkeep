@@ -1,0 +1,2 @@
+# Service manifests will be created here
+# Each service gets its own directory: services/<service-name>/manifest.yml
